@@ -368,8 +368,8 @@ public class Gestor extends javax.swing.JFrame {
             Statement consulta = bd.getConnection().createStatement();
             //TODO hacer la consulta para insertar los clientes
             consulta.executeUpdate("");
-
         } catch (SQLException ex) {
+            System.out.println("Ha petao: " + ex.getMessage());
         }
     }//GEN-LAST:event_btnGuardarClienteActionPerformed
 
